@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 
@@ -109,5 +108,4 @@ session_start();
 	 } elseif($_SERVER["REQUEST_METHOD"] == "GET"){
 		 include'reservation.php';
 	 }
-
 ?>
