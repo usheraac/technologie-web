@@ -4,8 +4,6 @@ class reservation
     private $Destination ;
     private $Nombre_de_places;
     private $Assurance_annulation;
-    private $Nom;
-    private $Age;
 
 
     //GETTER
@@ -19,15 +17,6 @@ class reservation
       return $this->Nombre_de_places;
     }
 
-    public function getNom()
-    {
-      return $this->Nom;
-    }
-
-    public function getAge()
-    {
-      return $this->Age;
-    }
 
     public function getAssurance_annulation()
     {
@@ -36,7 +25,7 @@ class reservation
     }
 
     //SETTER
-    public function setDestination($Destination)
+    public function setDestination($Destination='')
     {
       $this->Destination = $Destination;
     }
@@ -46,20 +35,41 @@ class reservation
       $this->Nombre_de_places = $Nombre_de_places;
     }
 
-    public function setNom($Nom)
-    {
-      $this->Nom = $Nom;
-    }
-
-    public function setAge($Age)
-    {
-      $this->Age=$Age;
-    }
     public function setAssurance_annulation($Assurance_annulation)
     {
       $this->Assurance_annulation =$Assurance_annulation;
     }
 }
 
+class Personne
+{
+  private $Nom;
+  private $Age;
 
+  //GETTER
+  public function getNom()
+  {
+    return $this->Nom;
+  }
+
+  public function getAge()
+  {
+    return $this->Age;
+  }
+
+  //SETTER
+
+      public function setNom($Nom)
+      {
+        $this->Nom = $Nom;
+      }
+
+      public function setAge($Age)
+      {
+        $this->Age=$Age;
+      }
+
+
+
+}
 ?>
