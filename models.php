@@ -4,6 +4,7 @@ class reservation
     private $Destination ;
     private $Nombre_de_places;
     private $Assurance_annulation;
+    private $Voyageur;
 
 
     //GETTER
@@ -24,8 +25,13 @@ class reservation
 
     }
 
+    public function getVoyageur()
+    {
+      return $this->Voyageur;
+    }
+
     //SETTER
-    public function setDestination($Destination='')
+    public function setDestination($Destination)
     {
       $this->Destination = $Destination;
     }
@@ -39,9 +45,15 @@ class reservation
     {
       $this->Assurance_annulation =$Assurance_annulation;
     }
+
+    public function setVoyageur($Voyageur)
+    {
+      $this->Voyageur =$Voyageur;
+    }
+
 }
 
-class Personne
+class voyageur
 {
   private $Nom;
   private $Age;
